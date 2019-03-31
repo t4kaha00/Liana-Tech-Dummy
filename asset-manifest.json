@@ -1,15 +1,14 @@
 {
-  "main.css": "/dummy-react/static/css/main.63bd24b2.chunk.css",
-  "main.js": "/dummy-react/static/js/main.3d1530db.chunk.js",
-  "main.js.map": "/dummy-react/static/js/main.3d1530db.chunk.js.map",
+  "main.css": "/dummy-react/static/css/main.432cb1fb.chunk.css",
+  "main.js": "/dummy-react/static/js/main.1b285a63.chunk.js",
+  "main.js.map": "/dummy-react/static/js/main.1b285a63.chunk.js.map",
   "runtime~main.js": "/dummy-react/static/js/runtime~main.c208c87f.js",
   "runtime~main.js.map": "/dummy-react/static/js/runtime~main.c208c87f.js.map",
-  "static/js/2.10c3619a.chunk.js": "/dummy-react/static/js/2.10c3619a.chunk.js",
-  "static/js/2.10c3619a.chunk.js.map": "/dummy-react/static/js/2.10c3619a.chunk.js.map",
+  "static/js/2.0f5a4ce3.chunk.js": "/dummy-react/static/js/2.0f5a4ce3.chunk.js",
+  "static/js/2.0f5a4ce3.chunk.js.map": "/dummy-react/static/js/2.0f5a4ce3.chunk.js.map",
   "index.html": "/dummy-react/index.html",
-  "precache-manifest.9aa6cd18f11b1acba29bec0d6f3967c2.js": "/dummy-react/precache-manifest.9aa6cd18f11b1acba29bec0d6f3967c2.js",
+  "precache-manifest.2514c25c96ccae122211a83db2f38a06.js": "/dummy-react/precache-manifest.2514c25c96ccae122211a83db2f38a06.js",
   "service-worker.js": "/dummy-react/service-worker.js",
-  "static/css/main.63bd24b2.chunk.css.map": "/dummy-react/static/css/main.63bd24b2.chunk.css.map",
-  "static/media/logo.svg": "/dummy-react/static/media/logo.5d5d9eef.svg",
+  "static/css/main.432cb1fb.chunk.css.map": "/dummy-react/static/css/main.432cb1fb.chunk.css.map",
   "static/media/home.css": "/dummy-react/static/media/main.12d4f3a9.png"
 }
