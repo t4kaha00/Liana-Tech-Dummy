@@ -1,8 +1,6 @@
 import React from 'react'
-import { Card, CardGroup, CardDeck, Jumbotron, Button } from 'react-bootstrap';
+import { Card, CardDeck, Jumbotron, Button } from 'react-bootstrap';
 import "./home.css"
-import Navigation from './Navigation'
-
 
 const linkStyle = {
   color: 'white'
