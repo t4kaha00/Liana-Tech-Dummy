@@ -1,19 +1,11 @@
 import React from 'react'
 import { Card, CardDeck, Jumbotron, Button } from 'react-bootstrap';
 import "./home.css"
-
-const linkStyle = {
-  color: 'white'
-};
-const footerStyle = {
-  display: 'inline-block',
-  backgroundColor: 'black'
-};
+import Footer from './Footer'
 
 const Home = () => (
 
   <div className="wrapper">
-
 
     <section className="section parallax justify-content-center align-items-center" style={{display: 'flex', 'flexDirection': 'column', 'alignItems': 'center',  'justifyContent': 'center', color: 'white'}}>
       <h1 className=" font-weight-light lg">Software fueling digital marketing</h1>
@@ -24,19 +16,19 @@ const Home = () => (
 
       <CardDeck className="py-5 px-5 bg-light" height={200}>
         <Card className="text-center my-auto" text="light" >
-          <Card.Img src="../src/images/company.png" className="img-fluid" alt="Card image" fluid/>
+          <Card.Img src={require("../images/company.png")} className="img-fluid" alt="Card image" fluid/>
           <Card.ImgOverlay className="m-auto h-50">
               <Card.Title className="card-body">Company</Card.Title>
           </Card.ImgOverlay>
         </Card>
         <Card className="text-center my-auto" text="light">
-          <Card.Img src="../src/images/products.png" alt="Card image" />
+          <Card.Img src={require("../images/products.png")} alt="Card image" />
           <Card.ImgOverlay className="m-auto h-50">
               <Card.Title className="card-body py-auto">Products</Card.Title>
           </Card.ImgOverlay>
         </Card>
         <Card className="text-center my-auto" text="light">
-          <Card.Img src="../src/images/contact.png" alt="Card image" />
+          <Card.Img src={require("../images/contact.png")} alt="Card image" />
           <Card.ImgOverlay className="m-auto h-50">
             <Card.Title className="card-body">Contact Us</Card.Title>
           </Card.ImgOverlay>
@@ -79,7 +71,7 @@ const Home = () => (
           <div className="row mx-auto px-5">
             <div className="col-md-3 col-sm-6 px-md-2 px-0 py-2 my-2">
               <div className="card h-100">
-                <img className="card-img-top" src="../src/images/bosch.png"/>
+                <img className="card-img-top" src={require("../images/bosch.png")} alt="bosch"/>
                 <div className="border-top card-body text-center">
                   <h5 className="card-title">Robert Bosch</h5>
                   <p className="card-text text-dark">Bosch is a multinational engineering and electronics company.</p>
@@ -88,7 +80,7 @@ const Home = () => (
             </div>
             <div className="col-md-3 col-sm-6 px-2 py-2 my-2">
               <div className="card h-100">
-                <img className="card-img-top" src="../src/images/thebodyshop.png"/>
+                <img className="card-img-top" src={require("../images/thebodyshop.png")} alt="The Body Shop"/>
                 <div className="border-top card-body text-center">
                   <h5 className="card-title">The Body Shop</h5>
                   <p className="card-text text-dark">The Body Shop is a global beauty brand and it has more than 3,000 stores in more than 60 countries.</p>
@@ -97,7 +89,7 @@ const Home = () => (
             </div>
             <div className="col-md-3 col-sm-6 px-2 py-2 my-2">
               <div className="card h-100">
-                <img className="card-img-top" src="../src/images/laplandhotels.png"/>
+                <img className="card-img-top" src={require("../images/laplandhotels.png")} alt="Lapland Hotels"/>
                 <div className="border-top card-body text-center">
                   <h5 className="card-title">Lapland Hotels</h5>
                   <p className="card-text text-dark">Lapland Hotels is the largest and the most diverse hotel chain in Lapland.</p>
@@ -106,7 +98,7 @@ const Home = () => (
             </div>
             <div className="col-md-3 col-sm-6 px-2 py-2 my-2">
               <div className="card h-100">
-                <img className="card-img-top" src="../src/images/ikea.png"/>
+                <img className="card-img-top" src={require("../images/ikea.png")} alt="IKEA"/>
                 <div className="border-top card-body text-center">
                   <h5 className="card-title">IKEA</h5>
                   <p className="card-text text-dark">IKEA is a multinational furniture store.</p>
@@ -128,6 +120,7 @@ const Home = () => (
 
       
     </section>
+    <Footer />
   </div>
 )
 

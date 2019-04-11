@@ -1,6 +1,6 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { Navbar, NavbarBrand, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import React from 'react';
+import { Button, Form, FormControl, Nav, Navbar, NavbarBrand } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => (
   <header className="fixed-top">
@@ -20,7 +20,7 @@ const Navigation = () => (
 
     <Navbar className="mt-5 font-weight-light" expand="lg" style={{backgroundColor: 'white'}}>
       <NavbarBrand>
-        <a href="/"><img src="../src/images/liana-logo.jpg" className="ml-5 mt-2" height={40} alt="Liana logo"/></a>
+        <a href="/"><img src={require("../images/logo.jpg")} className="ml-5 mt-2" height={40} alt="Liana logo"/></a>
       </NavbarBrand>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

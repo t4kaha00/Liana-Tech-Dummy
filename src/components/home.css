@@ -42,7 +42,7 @@ body,html{margin:0;padding:0;}
   /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 
-  
+  background-image: url('../images/main.png');
 }
 
 h2 {
