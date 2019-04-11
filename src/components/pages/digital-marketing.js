@@ -7,7 +7,7 @@ import Footer from '../Footer'
 
         <h2>14 Digital Marketing Predictions for 2022 [+ Infographic]</h2>
 
-        <img src="../main.png"
+        <img src={require("../main.png")}
           alt="Digital Marketing in 2022"
           className="align-self-center img-fluid"/><br /><br />
 

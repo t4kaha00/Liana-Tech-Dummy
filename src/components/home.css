@@ -43,6 +43,16 @@ body,html{margin:0;padding:0;}
   background-image: url('../images/main.png');
 }
 
+.static {
+  width: 100%;
+  background-color: white;
+}
+.content {
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+
 h2 {
   font-size: 24px !important;
   color: #212529;
@@ -72,29 +82,11 @@ header {
   color: whitesmoke;
 }
 
-@media (max-width: 311px) {
-  header {
-    /* background-color: #212529; */
-    display: block;
-  }
-  .navtop {
-    display: block !important;
-    padding-right: 0px !important;
-    float: left !important;
-    min-width: 64px !important;
-    width: 100%;
-  }
-
-  .nav-bar {
-    float: left;
-  }
-
-  .navbottom {
-    /* background-color: bisque; */
-    display: block;
-    float: left;
-  }
+.footer-right > ul li {
+  display: inline;
+  padding-right: 1em;
 }
+
 
 @media (max-width: 920px) {
   
@@ -112,6 +104,13 @@ header {
 
 }
 
+@media (max-width: 460px) {
+  .footer-right {
+    float: none;
+  }
+  
+}
+
 @media (max-width: 1015px) {
   .navtop {
     width: 100%;
@@ -119,5 +118,28 @@ header {
   
   .navbottom {
     width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+@media (min-aspect-ratio: 1/1) {
+  .footer {
+    margin : auto;
+    width: 75%;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .footer {
+    display: block;
+    margin : auto;
+  }
+
+  .footer-right > ul li {
+    display: block;
+    padding-bottom: 1em;
   }
 }

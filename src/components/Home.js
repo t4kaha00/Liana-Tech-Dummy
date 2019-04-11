@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, CardDeck, Jumbotron, Button } from 'react-bootstrap';
 import "./home.css"
 import Footer from './Footer'
-import validator from 'react-validation';
 
 const Home = () => (
 
@@ -13,9 +12,9 @@ const Home = () => (
       <Button variant="success" href="/news">Learn More</Button>
     </section>
 
-    <section className=" static">
-
-      <CardDeck className="py-5 px-5 bg-light">
+    <section className="static">
+      <div className="content">
+        <CardDeck className="py-5 px-5">
         <Card className="text-center my-auto mx-4" text="light" >
           <Card.Img src={require("../images/company.png")} alt="Card image" fluid/>
           <Card.ImgOverlay className="m-auto h-50">
@@ -36,7 +35,7 @@ const Home = () => (
         </Card>
       </CardDeck>
 
-      <Jumbotron className="text-center p-4">
+        <Jumbotron className="text-center p-4">
         <h4>Latest News</h4>
         <CardDeck className="pm-8 text-center">
           <Card className="p-4 text-left" style={{ width: '18rem' }}>
@@ -66,7 +65,7 @@ const Home = () => (
         </CardDeck>
       </Jumbotron>
 
-      <div id="references" className="container-fluid bg-white px-md-5 px-0 py-3">
+        <div id="references" className="container-fluid bg-white px-md-5 px-0 py-3">
         <h3 className="py-3 text-dark text-center">References</h3>
 
           <div className="row mx-auto px-5">
@@ -109,7 +108,7 @@ const Home = () => (
         </div>
       </div>
 
-      <div id="subscribe" className="container-fluid text-center border-top px-0 py-3 mt-5">
+        <div id="subscribe" className="container-fluid text-center border-top px-0 py-3 mt-5">
         <h3 className="py-3 text-dark ">Subscribe to our newsletter</h3>
         <p className="text-dark">Follow our story and get the latest promotonial news about our products and events.</p>
         <div className="col-md-6 col-xs-12 input-group input-group-lg my-3 mx-auto">
@@ -119,7 +118,7 @@ const Home = () => (
         <p id="subscription-msg" className="text-danger"></p>
       </div>
 
-      
+      </div>
     </section>
     <Footer />
   </div>
