@@ -2,32 +2,33 @@ import React from 'react'
 import { Card, CardDeck, Jumbotron, Button } from 'react-bootstrap';
 import "./home.css"
 import Footer from './Footer'
+import validator from 'react-validation';
 
 const Home = () => (
 
   <div className="wrapper">
 
-    <section className="section parallax justify-content-center align-items-center" style={{display: 'flex', 'flexDirection': 'column', 'alignItems': 'center',  'justifyContent': 'center', color: 'white'}}>
-      <h1 className=" font-weight-light lg">Software fueling digital marketing</h1>
+    <section className="section parallax" style={{display: 'flex', 'flexDirection': 'column', 'alignItems': 'center',  'justifyContent': 'center', color: 'white'}}>
+      <h1 className="font-weight-light">Software fueling digital marketing</h1>
       <Button variant="success" href="/news">Learn More</Button>
     </section>
 
     <section className=" static">
 
-      <CardDeck className="py-5 px-5 bg-light" height={200}>
-        <Card className="text-center my-auto" text="light" >
-          <Card.Img src={require("../images/company.png")} className="img-fluid" alt="Card image" fluid/>
+      <CardDeck className="py-5 px-5 bg-light">
+        <Card className="text-center my-auto mx-4" text="light" >
+          <Card.Img src={require("../images/company.png")} alt="Card image" fluid/>
           <Card.ImgOverlay className="m-auto h-50">
               <Card.Title className="card-body">Company</Card.Title>
           </Card.ImgOverlay>
         </Card>
-        <Card className="text-center my-auto" text="light">
+        <Card className="text-center my-auto mx-4" text="light">
           <Card.Img src={require("../images/products.png")} alt="Card image" />
           <Card.ImgOverlay className="m-auto h-50">
               <Card.Title className="card-body py-auto">Products</Card.Title>
           </Card.ImgOverlay>
         </Card>
-        <Card className="text-center my-auto" text="light">
+        <Card className="text-center my-auto mx-4" text="light">
           <Card.Img src={require("../images/contact.png")} alt="Card image" />
           <Card.ImgOverlay className="m-auto h-50">
             <Card.Title className="card-body">Contact Us</Card.Title>
@@ -112,8 +113,8 @@ const Home = () => (
         <h3 className="py-3 text-dark ">Subscribe to our newsletter</h3>
         <p className="text-dark">Follow our story and get the latest promotonial news about our products and events.</p>
         <div className="col-md-6 col-xs-12 input-group input-group-lg my-3 mx-auto">
-          <input id="email" className="form-control mr-2" type="text" placeholder="Your email address" aria-label="Email address"/>
-          <button id="subscribeBtn" className="btn btn-success " type="button">Subscribe</button>
+          <input name="email" className="form-control mr-2" type="text" placeholder="Your email address" aria-label="Email address"/>
+          <button className="btn" onClick={()=>{ alert('Thank you for subscribing.'); }}>Subscribe</button>
         </div>
         <p id="subscription-msg" className="text-danger"></p>
       </div>

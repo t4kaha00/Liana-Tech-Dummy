@@ -11,7 +11,7 @@ const footerStyle = {
 
 const Footer = () => (
 
-  <div className="container-fluid border-top py-2" style={footerStyle}>
+  <div className="container-fluid border-top py-2" expand="sm" style={footerStyle}>
 
     <div className="float-left">
        <h2 style={linkStyle}>Liana Technologies</h2>

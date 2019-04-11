@@ -16,10 +16,8 @@ body,html{margin:0;padding:0;}
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 90vh;
-  margin-top: 140px;
-
-
+  height: 70%;  
+  text-align: center;
 }
 
 
@@ -55,4 +53,71 @@ h2 {
 
 a:hover {
   text-decoration: none;
+}
+
+header {
+  background-color: #4C8930;
+}
+.navtop {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.navbottom {
+  width: 75%;
+}
+
+.btn {
+  background: #4C8930;
+  color: whitesmoke;
+}
+
+@media (max-width: 311px) {
+  header {
+    /* background-color: #212529; */
+    display: block;
+  }
+  .navtop {
+    display: block !important;
+    padding-right: 0px !important;
+    float: left !important;
+    min-width: 64px !important;
+    width: 100%;
+  }
+
+  .nav-bar {
+    float: left;
+  }
+
+  .navbottom {
+    /* background-color: bisque; */
+    display: block;
+    float: left;
+  }
+}
+
+@media (max-width: 920px) {
+  
+  .parallax::after {
+    
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section {
+    height: 400px;
+  }
+
+}
+
+@media (max-width: 1015px) {
+  .navtop {
+    width: 100%;
+  }
+  
+  .navbottom {
+    width: 100%;
+  }
 }
